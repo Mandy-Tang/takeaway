@@ -1,18 +1,18 @@
 {
-  "name": "sonic",
+  "name": "takeaway",
   "version": "0.1.0",
   "description": "",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThoughtWorksInc/sonic.git"
+    "url": "git+https://github.com/Mandy-Tang/takeaway.git"
   },
-  "author": "",
+  "author": "Tang Man",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ThoughtWorksInc/sonic/issues"
+    "url": "https://github.com/Mandy-Tang/takeaway/issues"
   },
-  "homepage": "https://github.com/ThoughtWorksInc/sonic#readme",
+  "homepage": "https://github.com/Mandy-Tang/takeaway#readme",
   "engines": {
     "node": ">= 5",
     "npm": ">= 2"
