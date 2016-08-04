@@ -11,7 +11,7 @@ const state = {
 }
 
 if (process.env.NODE_ENV !== 'production') {
-  require('./api/mocks')
+  require('./api/mocks');
 }
 
 const initialState = Object.assign(state, global.__INITIAL_STATE__ || {})

@@ -4,8 +4,7 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { Router, hashHistory } from 'react-router'
 
-import './reset.css'
-import './index.css'
+import './assets/styles/bootstrap.less'
 
 export default (store = {}, routes = {}, reducers = {}) => {
   global.React = React

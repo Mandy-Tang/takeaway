@@ -12,7 +12,7 @@
     "react/react-in-jsx-scope": 2,
     "react/no-did-mount-set-state": 1,
 
-    "semi": [1, "never"],
+    "semi": 0,
     "no-var": 0,
     "vars-on-top": 0,
     "comma-dangle": 0,

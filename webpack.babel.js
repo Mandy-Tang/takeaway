@@ -9,6 +9,7 @@ const baseConfig = {
   entry: {
     index: ['./src/index']
   },
+  devTool: 'source-map',
   module: {
     loaders: [{
         test: /\.jsx?$/,
@@ -31,10 +32,21 @@ const baseConfig = {
       }, {
         test: /\.json$/,
         loader: 'json-loader'
-    }]
+      }, {
+        test: /\.less$/,
+        loader: ExtractTextPlugin.extract(
+            // activate source maps via loader query
+            'css-loader?sourceMap!' +
+            'less-loader?sourceMap'
+        )
+      }, {
+        test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+        loader: 'url-loader?importLoaders=1&limit=1000&name=/fonts/[name].[ext]'
+      }]
   },
   output: {
     path: path.join(__dirname, 'dist/assets/'),
+    publicPath: '/assets/',
     filename: '[name].js',
     pathInfo: false
   },
